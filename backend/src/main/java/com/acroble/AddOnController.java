@@ -2,12 +2,13 @@ package com.acroble;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController()
+@Controller
 @RequestMapping("/api")
 public class AddOnController {
 
@@ -16,6 +17,11 @@ public class AddOnController {
     public static final String HELLO_TEXT = "Hello from Spring Boot Backend!";
     public static final String SECURED_TEXT = "Hello from the secured resource!";
 
+    @GetMapping(path = "/acroble")
+    public String addOnEntryPoint() {
+        LOG.info("GET called on /hello resource");
+        return "index";
+    }   
 
     @RequestMapping(path = "/hello")
     public String sayHello() {
