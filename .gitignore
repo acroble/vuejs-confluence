@@ -29,9 +29,16 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### acroble ##
+
 /frontend/dist/
 /frontend/node/
 /frontend/node_modules
-/frontend/package-lock.json
+*package-lock.json
+*credentials.json
+addon-db.lck
+addon-db.log
+addon-db.properties
 /backend/src/main/resources/public/static/
 
