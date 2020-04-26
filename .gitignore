@@ -29,5 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
-/node
-/node_modules/
+/frontend/dist/
+/frontend/node/
+/frontend/node_modules
+/frontend/package-lock.json
+/backend/src/main/resources/public/static/
+
