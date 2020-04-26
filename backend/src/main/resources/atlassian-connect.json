@@ -1,0 +1,33 @@
+{
+    "key": "${addon.key}",
+    "baseUrl": "${addon.base-url}",
+    "name": "Atlassian Connect Spring Boot With Vue.js Sample",
+    "authentication": {
+      "type": "jwt"
+    },
+    "lifecycle": {
+      "installed": "/installed",
+      "uninstalled": "/uninstalled"
+    },
+    "modules": {
+      "generalPages": [
+        {
+          "key": "vuekit-page-jira",
+          "location": "system.top.navigation.bar",
+          "name": {
+            "value": "Vuekit"
+          },
+          "url": "/api/acroble"
+        },
+        {
+          "key": "vuekit-page-confluence",
+          "location": "system.header/left",
+          "name": {
+            "value": "Vuekit"
+          },
+          "url": "/api/acroble"
+        }
+      ]
+    }
+  }
+  
