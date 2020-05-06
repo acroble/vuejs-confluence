@@ -1,5 +1,5 @@
 # acroble-connect
-# Spring Boot and Vue.js with Atlassian Connect #
+# Spring Boot and Vue.js with Atlassian Confluence #
 
 ![Atlassian Confluence Vue](frontend/src/assets/atlassian_confluence_vue.png)
 
